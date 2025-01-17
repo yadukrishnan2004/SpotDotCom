@@ -33,7 +33,7 @@
             <td>{{i.Description}}</td>
             <td>{{i.Type}}</td>
             <td><a href="adda">View Image</a></td>
-            <td><a href="adda">Delete</a></td>
+            <td><a href="/deletephoto/{{i.id}}/" onclick="return confirm('Are You sure you want to delete')">Delete</a></td>
         </tr>
         {%endfor%}
     </table>

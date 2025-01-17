@@ -35,10 +35,11 @@ class AmalgamationTable(models.Model):
 
 class ParkingSpotTable(models.Model):
     TOURIST = models.ForeignKey(TouristTable, on_delete=models.CASCADE)
-    AreaName = models.CharField(max_length=30, null=True, blank=True)    
+    AreaName = models.CharField(max_length=30, null=True, blank=True)
+    NoParking = models.CharField(max_length=200, blank=True, null=True)
+    Phone = models.IntegerField(blank=True, null=True)    
     Latitude = models.FloatField(null=True, blank=True)    
-    Longitude = models.FloatField(null=True, blank=True)    
-    NoParking = models.IntegerField(null=True, blank=True)    
+    Longitude = models.FloatField(null=True, blank=True)        
     Status = models.CharField(max_length=30, null=True, blank=True)  
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)

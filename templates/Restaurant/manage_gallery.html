@@ -1,0 +1,34 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gallery</title>
+    <link rel="stylesheet" href="{% static 'css/tablestyle.css'%}">
+</head>
+<body>
+    <header>
+        <h1>Your Gallery</h1>
+    </header>
+    
+    <section id="photoTable">
+        <div class="input-container">
+            <input type="file" id="photoInput">
+            <div class="add-icon" onclick="addPhoto()"></div>
+        </div>
+        <table class="photo-table">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="photoBody">
+                <!-- Photos will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    
+</html>

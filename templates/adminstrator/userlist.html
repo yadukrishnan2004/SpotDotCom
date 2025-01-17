@@ -33,8 +33,7 @@
             <td>{{i.Address}}</td>
             <td>{{i.Phone}}</td>
             <td>{{i.Email}}</td>
-            <th><a href="adda">Delete</a></th>
-        </tr>
+            <td><a href="/deleteuser/{{i.id}}/" onclick="return confirm('Are You sure you want to delete')">Delete</a></td>        </tr>
         {%endfor%}
     </table>
 </div>
