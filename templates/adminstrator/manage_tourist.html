@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/tablestyle.css'%}">
+</head>
+<body class="body">
+
+    
+   <div class="container"> 
+    <h1>Tourist List</h1>
+ <table border="1" >
+
+        <tr class="head">
+            <th>Profile</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        {%for i in val%}
+        <tr>
+            <th><img src="{{i.Image.url}}" alt="" height="50px" width="50px" id="img" style="border-radius: 50%;"></th>
+            <td>{{i.Name}}</td>
+            <td>{{i.Age}}</td>
+            <td>{{i.Gender}}</td>
+            <td>{{i.Address}}</td>
+            <td>{{i.Phone}}</td>
+            <td>{{i.Email}}</td>
+            <th><a href="adda">Delete</a></th>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+</body>
+</html>

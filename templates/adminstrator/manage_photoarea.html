@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/tablestyle.css'%}">
+</head>
+<body>
+
+    
+   <div class="container"> 
+    <h1>Photo Shoot Area List</h1>
+ <table border="1" >
+
+        <tr class="head">
+            <th>Preview</th>
+            <th>Photo Area Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Place</th>
+            <th>Type</th>
+            <th>View Image</th>
+            <th>Action</th>
+        </tr>
+        {%for i in val%}
+        <tr>
+            <th><img src="{{i.Image.url}}" alt="" height="50px" width="50px" id="img"></th>
+            <td>{{i.SpotName}}</td>
+            <td>{{i.Latitude}}</td>
+            <td>{{i.Longitude}}</td>
+            <td>{{i.Description}}</td>
+            <td>{{i.Type}}</td>
+            <td><a href="adda">View Image</a></td>
+            <td><a href="adda">Delete</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+</body>
+</html>

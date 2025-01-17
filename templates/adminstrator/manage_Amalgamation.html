@@ -1,0 +1,43 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/tablestyle.css'%}">
+</head>
+<body class="body">
+
+    
+   <div class="container"> 
+    <h1>Amalgamation List</h1>
+ <table border="1" >
+
+        <tr class="head">
+            <th>Preview</th>
+            <th>Place Name</th>
+            <th>Place</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+        {%for i in val%}
+        <tr>
+            <th><img src="{{i.Image.url}}" alt="" height="50px" width="50px" id="img"></th>
+            <td>{{i.Name}}</td>
+            <td>{{i.Place}}</td>
+            <td>{{i.Type}}</td>
+            <td>{{i.Description}}</td>
+            <td><a href="adda">View Image</a></td>
+            <td>{{i.Email}}</td>
+            <td>{{i.Phone}}</td>
+            <td><a href="adda">Delete</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+</body>

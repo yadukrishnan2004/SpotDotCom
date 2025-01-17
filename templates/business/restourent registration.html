@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+
+    <link rel="stylesheet" href="restourent.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="admin_dashbord.html" id="reg-form">
+
+        <h1>Resturant Registration</h1>
+        <div class="decoration"></div>
+        <div class="input_container">
+            <label class="input_label" for="Resturent-Name">Resturant Name</label>
+            <input type="text" id="Resturant Name" class="input_field" placeholder="Enter Resturant Name"
+                maxlength="19"></div>
+
+        <div class="input_container">
+            <label class="input_label" for="Place">Place</label>
+            <input type="text" id="Place" class="input_field" placeholder="Place" maxlength="50">
+            
+
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="cardholder-name-input">Phone</label>
+            <input type="text" id="Phone" class="input_field" placeholder="Enter your phone number">
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="Email">Email</label>
+            <input type="text" id="Email" class="input_field" placeholder="Email" maxlength="20">
+
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="Type">Type</label>
+            <select name="" id="Type">
+                <option selected disabled>--select a type--</option>
+                <option value="Luxury Resorts">Luxury Resorts</option>
+                <option value=" Spa Resorts"> Spa Resorts</option>
+                <option value="Golf Resorts">Golf Resorts</option>
+                <option value=" Destination Wedding Resorts"> Destination Wedding Resorts</option>
+
+            </select>
+            <div class="input_container">
+               <div class="input_label"><br>Upload License</div>
+                <input type="file" accept="image/*" required="" id="file-input"></div>
+
+                    <div class="input_container">
+                        <label class="input_label" for="Username">Username</label>
+                        <input type="text" id="Username" class="input_field" placeholder="Username" maxlength="20">
+                    </div>
+                        <div class="input_container">
+                            <label class="input_label" for="Password">Password</label>
+                            <input type="text" id="Password" class="input_field" placeholder="Password" maxlength="20">
+                        </div>
+
+                            <button class="button" type="submit" id="card-button">
+                                <span>Register</span>
+                            </button>
+
+                            <div class="footer">
+                                <p>© 2025 All rights reserved on SPOT IT.</p>
+                            </div>
+                        </div>
+                    </form>
+<script>
+   document.getElementById('reg-form').addEventListener('submit',function(e){
+    e.preventDefault();
+
+    document.body.classList.add('fade-out');
+    setTimeout(()=>{
+        this.submit();
+    },500);
+   });
+
+
+   
+</script>
+</body>
+
+</html>

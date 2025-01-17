@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 150vh;
+    background: linear-gradient(135deg, #001f3f, #0e4e92);
+}
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+    font-weight: bolder;
+}
+
+header {
+    background-color: #005ea6;
+    padding: 20px;
+    color: white;
+}
+
+#photoTable {
+    padding: 20px;
+}
+
+.photo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.photo-table th, .photo-table td {
+    border: 1px solid #7a7f85;
+    padding: 20px;
+    text-align: center;
+}
+#photoInput{
+
+   
+    
+    color: #444;
+    padding: 2px;
+    /* background: #e9e4e4;background color of no file choosen */
+    border-radius: 10px;
+    border: 1px solid rgba(8, 8, 8, 0.288);
+    border: 1px solid #444;
+    padding: 10px;
+}
+#photoInput::file-selector-button {
+    margin-right: 10px;
+    border: none;
+    background: #005ea6;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+ 
+  }
+  #photoInput:hover {
+    background: #767d83;
+    transform: translateY(-2px);
+  }
+  /* styles.css */
+.add-icon {
+    
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url('asset/add.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap/spacing between input and button */
+    margin-bottom: 20px;
+}
+
+
+
+
+                                  
+    
+
